@@ -1,7 +1,7 @@
-package es.altia.tasks.adapter.mapper;
+package es.altia.tasks.adapters.persistence.mappers;
 
-import es.altia.tasks.adapter.entity.TaskEntity;
-import es.altia.tasks.model.Task;
+import es.altia.tasks.adapters.persistence.entities.TaskEntity;
+import es.altia.tasks.models.Task;
 import org.mapstruct.Mapper;
 
 import java.util.List;

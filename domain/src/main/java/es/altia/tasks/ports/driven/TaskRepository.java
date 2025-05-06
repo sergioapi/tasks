@@ -1,6 +1,6 @@
-package es.altia.tasks.ports;
+package es.altia.tasks.ports.driven;
 
-import es.altia.tasks.model.Task;
+import es.altia.tasks.models.Task;
 
 import java.util.List;
 

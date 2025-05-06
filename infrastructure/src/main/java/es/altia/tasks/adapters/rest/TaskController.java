@@ -1,7 +1,7 @@
-package es.altia.tasks.rest;
+package es.altia.tasks.adapters.rest;
 
-import es.altia.tasks.model.Task;
-import es.altia.tasks.usecase.TaskUseCase;
+import es.altia.tasks.models.Task;
+import es.altia.tasks.ports.driving.TaskUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

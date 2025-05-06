@@ -1,4 +1,4 @@
-package es.altia.tasks.adapter.entity;
+package es.altia.tasks.adapters.persistence.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

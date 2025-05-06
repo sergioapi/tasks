@@ -1,6 +1,6 @@
-package es.altia.tasks.usecase;
+package es.altia.tasks.ports.driving;
 
-import es.altia.tasks.model.Task;
+import es.altia.tasks.models.Task;
 
 import java.util.List;
 import java.util.Optional;

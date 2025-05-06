@@ -1,4 +1,4 @@
-package es.altia.tasks.model;
+package es.altia.tasks.models;
 
 import java.time.LocalDateTime;
 

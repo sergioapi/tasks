@@ -1,6 +1,6 @@
-package es.altia.tasks.adapter.repository;
+package es.altia.tasks.adapters.persistence.repositories;
 
-import es.altia.tasks.adapter.entity.TaskEntity;
+import es.altia.tasks.adapters.persistence.entities.TaskEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

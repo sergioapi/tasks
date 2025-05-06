@@ -1,9 +1,8 @@
-package es.altia.tasks.adapter.repository;
+package es.altia.tasks.adapters.persistence.repositories;
 
-import es.altia.tasks.adapter.entity.TaskEntity;
-import es.altia.tasks.adapter.mapper.TaskMapper;
-import es.altia.tasks.model.Task;
-import es.altia.tasks.ports.TaskRepository;
+import es.altia.tasks.adapters.persistence.mappers.TaskMapper;
+import es.altia.tasks.models.Task;
+import es.altia.tasks.ports.driven.TaskRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -29,12 +28,7 @@ public class TaskRepositoryAdapter implements TaskRepository {
 
     @Override
     public List<Task> findAll() {
-        List<TaskEntity> taskEntities = taskJpaRepository.findAll();
-        System.out.println("Recuperado TaskEntities: " + taskEntities);
-        List<Task> tasks = taskMapper.toDomainList(taskEntities);
-        System.out.println("Mapped Tasks: " + tasks);
-        return tasks;
-        //return taskMapper.toDomainList(taskJpaRepository.findAll());
+        return taskMapper.toDomainList(taskJpaRepository.findAll());
     }
 
     @Override

@@ -1,20 +1,22 @@
-package es.altia.tasks.service;
+package es.altia.tasks.usescases;
 
-import es.altia.tasks.model.Task;
-import es.altia.tasks.ports.TaskRepository;
-import es.altia.tasks.usecase.TaskUseCase;
+import es.altia.tasks.models.Task;
+import es.altia.tasks.ports.driven.TaskRepository;
+import es.altia.tasks.ports.driving.TaskUseCase;
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
-public class TaskService implements TaskUseCase {
+public class TaskUseCaseImpl implements TaskUseCase {
     private final TaskRepository taskRepository;
 
 
     @Override
     public Task createTask(Task task) {
+        task.setCreationDate(LocalDateTime.now());
         return taskRepository.save(task);
     }
 
