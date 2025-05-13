@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>es.altia</groupId>
+        <groupId>es.sergio</groupId>
         <artifactId>tasks</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>es.altia.tasks</groupId>
+    <groupId>es.sergio.tasks</groupId>
     <artifactId>infrastructure</artifactId>
 
     <properties>
@@ -21,12 +21,12 @@
     <dependencies>
         <!-- Módulos internos -->
         <dependency>
-            <groupId>es.altia.tasks</groupId>
+            <groupId>es.sergio.tasks</groupId>
             <artifactId>domain</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>es.altia.tasks</groupId>
+            <groupId>es.sergio.tasks</groupId>
             <artifactId>application</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
