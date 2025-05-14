@@ -1,5 +1,6 @@
 package es.sergio.tasks.usescases;
 
+import es.sergio.shared.annotations.UseCase;
 import es.sergio.tasks.models.Task;
 import es.sergio.tasks.ports.driven.TaskRepository;
 import es.sergio.tasks.ports.driving.TaskUseCase;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
+@UseCase
 public class TaskUseCaseImpl implements TaskUseCase {
     private final TaskRepository taskRepository;
 

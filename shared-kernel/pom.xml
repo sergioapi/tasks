@@ -10,19 +10,12 @@
     </parent>
 
     <groupId>es.sergio.tasks</groupId>
-    <artifactId>application</artifactId>
+    <artifactId>shared-kernel</artifactId>
 
-<dependencies>
-    <dependency>
-        <groupId>es.sergio.tasks</groupId>
-        <artifactId>domain</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-        <groupId>es.sergio.tasks</groupId>
-        <artifactId>shared-kernel</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-</dependencies>
 </project>

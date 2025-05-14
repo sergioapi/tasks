@@ -3,12 +3,14 @@ package es.sergio.users.usecases;
 import es.sergio.users.models.User;
 import es.sergio.users.ports.driven.UserRepository;
 import es.sergio.users.ports.driving.UserUseCase;
+import es.sergio.shared.annotations.UseCase;
 import lombok.AllArgsConstructor;
 
 import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
+@UseCase
 public class UserUseCaseImpl implements UserUseCase {
 
     private UserRepository userRepository;
